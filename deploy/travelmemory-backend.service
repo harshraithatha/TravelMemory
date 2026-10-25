@@ -1,0 +1,17 @@
+# /etc/systemd/system/travelmemory-backend.service on backend-master and backend-2
+# Keeps the backend running, restarts it on crash and starts it on boot
+[Unit]
+Description=TravelMemory Backend
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/TravelMemory/backend
+EnvironmentFile=/home/ubuntu/TravelMemory/backend/.env
+ExecStart=/usr/bin/node index.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
