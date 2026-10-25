@@ -1,3 +1,6 @@
+> **Deployment assignment:** see [DEPLOYMENT.md](DEPLOYMENT.md) for the full AWS EC2 deployment guide, screenshots and architecture diagram.
+> Live app: http://travelmemory-frontend-alb-2055907764.ap-south-1.elb.amazonaws.com
+
 # Travel Memory
 
 `.env` file to work with the backend after creating a database in mongodb: 
